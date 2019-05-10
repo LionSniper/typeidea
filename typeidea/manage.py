@@ -4,6 +4,7 @@ import sys
 
 if __name__ == "__main__":
     # os.environ.setdefault("DJANGO_SETTINGS_MODULE", "typeidea.settings")
+    # 添加一个没用的注释
     profile = os.environ.get('TYPEIDEA_PROFILE', 'develop')
     os.environ.setdefault("DJANGO_SETTINGS_MODULE", "typeidea.settings.%s" % profile)
     try:
